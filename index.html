@@ -1,0 +1,24 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎁 Juego de Amigo Secreto 🎄</h1>
+        <div class="input-group">
+            <input type="text" id="nameInput" placeholder="Ingresa un nombre">
+            <button onclick="addParticipant()">Agregar</button>
+        </div>
+        <button class="assign-btn" onclick="assignSecretSanta()">Asignar Amigos Secretos</button>
+        <h2>Participantes:</h2>
+        <ul id="participantsList" class="participants"></ul>
+        <h2 class="hidden" id="resultsTitle">Haz clic en tu nombre para ver tu amigo secreto:</h2>
+        <ul id="resultList" class="result-list hidden"></ul>
+    </div>
+    <div id="messageBox" class="hidden"></div>
+    <script src="script.js"></script>
+</body>
+</html>
